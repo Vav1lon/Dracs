@@ -2,16 +2,15 @@ dataSource {
     loggingSql = true
     pooled = true
     driverClassName = "org.postgresql.Driver"
-    username = "simas"
-    password = "simas"
+    username = "dracs"
+    password = "wGeGE3BiqW43"
 }
 // environment specific settings
 environments {
     development {
         dataSource {
-            dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
-            url = "jdbc:postgresql://127.0.0.1:5432/simas"
-
+            dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
+            url = "jdbc:postgresql://127.0.0.1:5432/dracs_db"
         }
     }
     test {
@@ -23,7 +22,7 @@ environments {
     production {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:h2:prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
+            url = "jdbc:postgresql://localhost:5432/dracs_db"
             pooled = true
             properties {
                 maxActive = -1

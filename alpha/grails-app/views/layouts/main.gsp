@@ -111,7 +111,7 @@
                                         </tr>
                                     </table>
                                     <multiline
-                                            label="Description"><p>Kuzmin Denis В рот чих-пых :) (c) 2012  \\ version:alpha</p>
+                                            label="Description"><p>Kuzmin Denis 2012  \\ version:alpha</p>
                                     </multiline>
                                 </td>
                             </tr>
